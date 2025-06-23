@@ -2,8 +2,7 @@
 
 using namespace std;
 
-KeyProvider::KeyProvider(const string& aKeyword) 
-    : fKeyword(new char[aKeyword.length()]), fSize(aKeyword.length()), fIndex(0) 
+KeyProvider::KeyProvider(const string& aKeyword) : fKeyword(new char[aKeyword.length()]), fSize(aKeyword.length()), fIndex(0) 
 {
     initialize(aKeyword);
 }

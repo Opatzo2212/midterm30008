@@ -2,8 +2,7 @@
 
 using namespace std;
 
-iVigenereStream::iVigenereStream(Cipher aCipher, const string& aKeyword, const char* aFileName) 
-    : fIStream(ifstream()), fCipherProvider(Vigenere(aKeyword)), fCipher(move(aCipher)) 
+iVigenereStream::iVigenereStream(Cipher aCipher, const string& aKeyword, const char* aFileName) : fIStream(ifstream()), fCipherProvider(Vigenere(aKeyword)), fCipher(move(aCipher)) 
 {
     if (aFileName != nullptr) 
     {

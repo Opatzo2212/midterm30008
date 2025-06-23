@@ -18,8 +18,7 @@ void Vigenere::initializeTable()
     }
 }
 
-Vigenere::Vigenere(const string& aKeyword) 
-    : fKeyword(aKeyword), fKeywordProvider(KeyProvider(aKeyword)) 
+Vigenere::Vigenere(const string& aKeyword) : fKeyword(aKeyword), fKeywordProvider(KeyProvider(aKeyword)) 
 {
     initializeTable();
 }
